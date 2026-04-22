@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Boring Streak</title>
+  <meta name="description" content="Terms of service for the Boring Streak iOS app." />
+  <meta name="theme-color" content="#FBFAF7" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M20 22 L44 44 M44 22 L20 44' fill='none' stroke='%23111' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --paper: #FBFAF7;
+      --ink: #121212;
+      --ink-soft: rgba(18, 18, 18, 0.58);
+      --ink-faint: rgba(18, 18, 18, 0.22);
+      --mono: 'Courier Prime', 'Courier New', ui-monospace, monospace;
+    }
+    html, body { background: var(--paper); color: var(--ink); font-family: var(--mono); -webkit-font-smoothing: antialiased; }
+    body { line-height: 1.7; }
+    a { color: inherit; }
+
+    nav { position: sticky; top: 0; z-index: 50; background: rgba(251, 250, 247, 0.9); backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid var(--ink-faint); }
+    .nav-inner { max-width: 760px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 12px; }
+    .nav-inner .logo { width: 24px; height: 24px; }
+    .nav-inner .name { font-weight: 700; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; }
+    .nav-inner .back { margin-left: auto; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+    .nav-inner .back:hover { color: var(--ink); }
+
+    main { max-width: 760px; margin: 0 auto; padding: 60px 28px 120px; }
+
+    h1 { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: clamp(26px, 4vw, 38px); line-height: 1.25; }
+    .eyebrow { display: inline-block; font-size: 11px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+    .updated { color: var(--ink-soft); font-style: italic; margin-top: 8px; font-size: 13px; }
+
+    h2 { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: 16px; margin-top: 44px; margin-bottom: 12px; border-top: 1px solid var(--ink-faint); padding-top: 28px; }
+
+    p { margin-top: 14px; font-size: 15px; }
+    p + p { margin-top: 12px; }
+
+    ul { margin-top: 12px; padding-left: 22px; }
+    li { margin-top: 6px; font-size: 15px; }
+
+    .note { margin-top: 44px; padding: 18px 20px; border: 1px dashed var(--ink); font-style: italic; font-size: 14px; color: var(--ink-soft); }
+
+    .callout {
+      margin-top: 22px; padding: 18px 20px; border: 1.5px solid var(--ink);
+      font-size: 14px; background: rgba(0,0,0,0.02);
+    }
+    .callout strong { letter-spacing: 0.08em; }
+
+    footer { max-width: 760px; margin: 0 auto; padding: 34px 28px; border-top: 1px solid var(--ink-faint); display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; color: var(--ink-soft); }
+    footer a { color: var(--ink-soft); }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="x-box" viewBox="0 0 64 64">
+        <rect x="5" y="5" width="54" height="54" fill="none" stroke="currentColor" stroke-width="3" />
+        <path d="M19 21 Q23 25 32 32 Q41 39 45 43" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M45 21 Q41 25 32 32 Q23 39 19 43" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <nav>
+    <div class="nav-inner">
+      <svg class="logo" aria-hidden="true"><use href="#x-box"/></svg>
+      <span class="name">Boring Streak</span>
+      <a href="/" class="back">← back</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="eyebrow">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: April 22, 2026</p>
+
+    <p>These terms explain what you can expect from Boring Streak, LLC ("Boring Streak," "we," "us"), the publisher of the Boring Streak app, and what we need from you to keep the app working for everyone. By downloading or using the app, you agree to them.</p>
+
+    <h2>1. Who can use the app</h2>
+    <p>You need to be at least 13 to use Boring Streak. If you're in the United States and under 18, you should have a parent or guardian review these terms with you. The app is sold worldwide through the Apple App Store; some features may not be available in every country.</p>
+
+    <h2>2. What the app is</h2>
+    <p>Boring Streak is a self-help tool designed to help you abstain from gambling through daily check-ins, a savings tracker, and a Screen Time / FamilyControls-based blocker. It's a tool, not a substitute for professional treatment.</p>
+
+    <div class="callout">
+      <strong>NOT MEDICAL OR CLINICAL ADVICE.</strong> Boring Streak does not diagnose, treat, or cure any condition, including gambling disorder. If you are in crisis, call 1-800-GAMBLER (US) or your local helpline. If you are thinking about harming yourself, call or text 988 (US) or your local emergency services.
+    </div>
+
+    <h2>3. Your account</h2>
+    <p>You sign in to the app with Sign in with Apple. You're responsible for your Apple ID credentials. If someone else uses your Apple ID to access the app, their activity will look like yours to us.</p>
+
+    <h2>4. Subscription, free trial, and cancellation</h2>
+    <ul>
+      <li><strong>Pricing.</strong> Subscription prices are shown in the paywall in the app and processed by Apple. Prices may vary by region.</li>
+      <li><strong>Free trial.</strong> If you start a free trial, it converts to a paid subscription at the listed price unless you cancel before the trial ends.</li>
+      <li><strong>Auto-renewal.</strong> Subscriptions auto-renew at the end of each billing period until you turn auto-renew off at least 24 hours before the renewal date.</li>
+      <li><strong>Cancellation.</strong> You can cancel or manage your subscription at any time in iOS <em>Settings → [your name] → Subscriptions</em>, or via the "subscription" row inside the app's Profile tab.</li>
+      <li><strong>Refunds.</strong> Refunds are handled by Apple under their policies. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+    </ul>
+
+    <h2>5. Acceptable use</h2>
+    <p>Please don't: reverse-engineer the app, use it to harass anyone, attempt to bypass the subscription gate, use someone else's account without permission, or use the referral system in bad faith (e.g., creating fake accounts to farm free months). If you do, we may suspend or terminate your account.</p>
+
+    <h2>6. Content you add</h2>
+    <p>You keep ownership of any content you put into the app (your first name, daily bet amount, streak history, etc.). You grant us a limited license to store and display that content inside the app and to sync it through our backend so you can restore it on another device.</p>
+
+    <h2>7. The blocker</h2>
+    <p>The gambling blocker uses Apple's Screen Time / FamilyControls framework. It is a <em>best-effort</em> tool: it blocks what you tell it to block using OS-level APIs, but no blocker can guarantee full coverage of every gambling app, site, or ad. You remain responsible for your choices. Disabling the blocker is intentional friction (a 30-minute cooldown and a streak reset) — it is not a security feature.</p>
+
+    <h2>8. Referrals</h2>
+    <p>When a friend signs up with your referral code and becomes a paying subscriber, both accounts receive a one-month credit. We reserve the right to revoke credits obtained through fraud, duplicate accounts, or bot activity.</p>
+
+    <h2>9. Availability</h2>
+    <p>We try to keep the app working all the time, but we can't promise it will always be available, bug-free, or compatible with every iPhone or iOS version. Features may change, be added, or be removed.</p>
+
+    <h2>10. Disclaimer of warranties</h2>
+    <p>The app is provided "as is" and "as available," without warranties of any kind, express or implied, including fitness for a particular purpose, merchantability, or non-infringement. Use at your own risk.</p>
+
+    <h2>11. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, Boring Streak, LLC is not liable for indirect, incidental, special, consequential, or punitive damages, or for any gambling losses or related financial harm. Total liability for any claim is limited to the amount you paid us in the 12 months before the claim.</p>
+
+    <h2>12. Termination</h2>
+    <p>You can stop using the app at any time. We may suspend or terminate your access if you violate these terms. On termination, your license to use the app ends; you can still request an export or deletion of your data per the Privacy Policy.</p>
+
+    <h2>13. Changes</h2>
+    <p>We may update these terms. We'll change the date at the top and highlight material changes in-app. Continued use of the app after a change means you accept the new terms.</p>
+
+    <h2>14. Governing law</h2>
+    <p>These terms are governed by the laws of the State of Utah, USA, without regard to conflict-of-laws principles. Disputes will be resolved in the state or federal courts located in Salt Lake County, Utah, unless a different forum is required by applicable consumer law where you live.</p>
+
+    <h2>15. Apple App Store</h2>
+    <p>The app is licensed to you by us, not Apple. Apple is not responsible for the app or these terms. If the app fails to conform to any applicable warranty, Apple's only obligation is to refund the purchase price of the app (if any). These terms are an agreement between you and us; Apple is a third-party beneficiary entitled to enforce them.</p>
+
+    <h2>16. Contact</h2>
+    <p>Questions or concerns: <a href="mailto:hello@boringstreak.com">hello@boringstreak.com</a>.</p>
+
+    <p class="note">This page is written in plain English and intended as reasonable starter terms for a solo-founder app. It is not legal advice. Please have a lawyer review the terms for your specific business before relying on them.</p>
+  </main>
+
+  <footer>
+    <a href="/">← Boring Streak</a>
+    <a href="/privacy">Privacy</a>
+    <a href="mailto:hello@boringstreak.com">hello@boringstreak.com</a>
+  </footer>
+</body>
+</html>

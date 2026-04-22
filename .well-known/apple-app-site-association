@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["H49HS8A764.tank.Winning-Streak"],
+        "components": [
+          { "/": "/r/*", "comment": "Referral codes — opens app and applies code" }
+        ]
+      }
+    ]
+  }
+}
