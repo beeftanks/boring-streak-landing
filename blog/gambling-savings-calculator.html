@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How Much Would You Save If You Quit Gambling? (Calculator) — Boring Streak</title>
+<meta name="description" content="A simple calculator: enter what you spend gambling and see what you would keep in a month, a year, and five years if you quit. No signup." />
+<meta name="theme-color" content="#FBFAF7" />
+<link rel="canonical" href="https://boringstreak.com/blog/gambling-savings-calculator" />
+<meta property="og:title" content="How Much Would You Save If You Quit Gambling?" />
+<meta property="og:description" content="Enter what you spend and see what you would keep in a month, a year, and five years." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://boringstreak.com/blog/gambling-savings-calculator" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M20 22 L44 44 M44 22 L20 44' fill='none' stroke='%23111' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--paper:#FBFAF7;--paper-deep:#F3F1EA;--ink:#121212;--ink-soft:rgba(18,18,18,0.58);--ink-faint:rgba(18,18,18,0.22);--mono:'Courier Prime','Courier New',ui-monospace,monospace;--maxw:1240px}
+html,body{background:var(--paper);color:var(--ink);font-family:var(--mono);-webkit-font-smoothing:antialiased}
+body{line-height:1.7;overflow-x:hidden}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,0.92);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--ink)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .logo{width:26px;height:26px}
+.brand .name{font-weight:700;font-size:12px;letter-spacing:0.28em;text-transform:uppercase;text-decoration:none}
+.btn-ink{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);font-weight:700;font-size:11px;letter-spacing:0.26em;text-transform:uppercase;padding:11px 18px;border:1px solid var(--ink);text-decoration:none;transition:transform .12s ease,box-shadow .12s ease}
+.btn-ink:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.wrap{max-width:740px;margin:0 auto;padding:54px 28px 40px}
+.eyebrow{font-size:11px;letter-spacing:0.4em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px}
+h1{font-weight:700;font-size:clamp(28px,5vw,48px);letter-spacing:-0.01em;line-height:1.06;text-transform:uppercase;margin-bottom:16px}
+.lede{font-size:17px;color:var(--ink-soft);margin-bottom:30px;max-width:560px}
+.calc{border:1.5px solid var(--ink);background:var(--paper);padding:24px;position:relative}
+.calc::before{content:"";position:absolute;inset:8px -8px -8px 8px;border:1.5px solid var(--ink);z-index:-1;background:var(--paper-deep)}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end}
+.field{flex:1;min-width:150px}
+label{display:block;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:7px}
+input,select{width:100%;font-family:var(--mono);font-size:18px;color:var(--ink);background:var(--paper);border:1.5px solid var(--ink);padding:11px 12px;border-radius:0}
+input:focus,select:focus{outline:none;box-shadow:3px 3px 0 var(--ink)}
+.results{margin-top:26px;border-top:1.5px dashed var(--ink-faint);padding-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat .k{font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+.stat .v{font-size:clamp(22px,4.4vw,34px);font-weight:700;letter-spacing:-0.01em;line-height:1}
+.stat.big .v{font-size:clamp(30px,6vw,52px)}
+.note{margin-top:18px;font-size:13px;color:var(--ink-soft);font-style:italic}
+@media(max-width:560px){.results{grid-template-columns:1fr 1fr}}
+.endcta{border-top:1px solid var(--ink);margin-top:40px;padding-top:26px;font-size:16px;color:var(--ink-soft);font-style:italic}
+.endcta a{font-style:normal;font-weight:700;color:var(--ink)}
+.callout{border:1.5px solid var(--ink);background:var(--paper-deep);padding:16px 18px;margin:28px 0;font-size:15px}
+.callout b{display:block;letter-spacing:0.2em;text-transform:uppercase;font-size:11px;margin-bottom:6px}
+footer{border-top:1px solid var(--ink);margin-top:40px}
+.foot-inner{max-width:var(--maxw);margin:0 auto;padding:22px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink-soft)}
+.foot-inner a{text-decoration:none}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner">
+<a class="brand" href="/"><svg class="logo" viewBox="0 0 64 64"><rect x="6" y="6" width="52" height="52" fill="none" stroke="#121212" stroke-width="4"/><path d="M20 22 L44 44 M44 22 L20 44" fill="none" stroke="#121212" stroke-width="5" stroke-linecap="round"/></svg><span class="name">Boring Streak</span></a>
+<a class="btn-ink" href="https://apps.apple.com/app/id6761735163">Get the app</a>
+</div></nav>
+
+<div class="wrap">
+<div class="eyebrow">Calculator</div>
+<h1>How Much Would You Save If You Quit Gambling?</h1>
+<p class="lede">Not the big losses you remember, the steady, ordinary spend. Put in a rough number and see what stays in your pocket if you stop.</p>
+
+<div class="calc">
+  <div class="row">
+    <div class="field">
+      <label for="amt">I spend about</label>
+      <input id="amt" type="number" inputmode="decimal" min="0" step="5" value="50" aria-label="Amount you spend" />
+    </div>
+    <div class="field">
+      <label for="freq">per</label>
+      <select id="freq" aria-label="How often">
+        <option value="365">day</option>
+        <option value="52" selected>week</option>
+        <option value="12">month</option>
+      </select>
+    </div>
+  </div>
+  <div class="results">
+    <div class="stat"><div class="k">in a month</div><div class="v" id="r-month">$0</div></div>
+    <div class="stat big"><div class="k">in a year</div><div class="v" id="r-year">$0</div></div>
+    <div class="stat"><div class="k">in 5 years</div><div class="v" id="r-five">$0</div></div>
+  </div>
+  <p class="note" id="note">That is money you would keep, not winnings you would chase.</p>
+</div>
+
+<div class="callout"><b>If gambling has stopped being a choice</b>This is not just about money. Call or text <b>1-800-GAMBLER</b> (US) for free, confidential help, 24/7.</div>
+
+<div class="endcta">Boring Streak tracks this number for real, every clean day, alongside a blocker for the betting apps. Watching it climb is the whole point. <a href="https://apps.apple.com/app/id6761735163">Get it on the App Store &rarr;</a></div>
+</div>
+
+<footer><div class="foot-inner">
+<span>Boring Streak &copy; 2026</span>
+<span><a href="/blog/">Blog</a> &nbsp; <a href="/privacy.html">Privacy</a> &nbsp; <a href="/terms.html">Terms</a></span>
+</div></footer>
+
+<script>
+(function(){
+  var amt=document.getElementById('amt'),freq=document.getElementById('freq');
+  var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+  function calc(){
+    var a=parseFloat(amt.value);if(isNaN(a)||a<0)a=0;
+    var perYear=a*parseFloat(freq.value);
+    document.getElementById('r-month').textContent=fmt(perYear/12);
+    document.getElementById('r-year').textContent=fmt(perYear);
+    document.getElementById('r-five').textContent=fmt(perYear*5);
+    var note=document.getElementById('note');
+    if(perYear>=10000){note.textContent="That is a car, a down payment, a year of rent. Money you would keep, not winnings you would chase.";}
+    else if(perYear>=2000){note.textContent="A real vacation, an emergency fund. Money you would keep, not winnings you would chase.";}
+    else{note.textContent="That is money you would keep, not winnings you would chase.";}
+  }
+  amt.addEventListener('input',calc);freq.addEventListener('change',calc);calc();
+})();
+</script>
+</body>
+</html>
