@@ -127,6 +127,11 @@ nav{
   content:"";position:absolute;left:-2%;right:-2%;top:52%;height:0.09em;
   background:var(--ink);transform:rotate(-3deg);
 }
+.hero-copy h1 .uline{position:relative;display:inline-block}
+.hero-copy h1 .uline::after{
+  content:"";position:absolute;left:-1%;right:-1%;bottom:0.03em;height:0.085em;
+  background:var(--ink);transform:rotate(-1.2deg);
+}
 .hero-copy .sub{
   margin-top:28px;font-size:16px;color:var(--ink-soft);line-height:1.65;max-width:480px;
   font-style:italic;
@@ -650,9 +655,8 @@ footer{border-top:1.5px solid var(--ink);padding:40px 28px 30px;color:var(--ink-
       <div class="hero-copy">
         <div class="eyebrow">The anti-casino · iPhone app</div>
         <h1>
-          Quit gambling.<br/>
-          Make your phone<br/>
-          boring.
+          Make your phone <span class="uline">boring</span>.<br/>
+          Quit gambling today.
         </h1>
         <p class="sub">
           A calm little app that helps you quit. Check in every day you don't gamble. Block the apps and sites. <b>Watch the money you didn't lose quietly stack up</b> — one X at a time.
@@ -728,7 +732,7 @@ footer{border-top:1.5px solid var(--ink);padding:40px 28px 30px;color:var(--ink-
     <div class="story-inner">
       <div>
         <div class="kicker">00 &nbsp;/&nbsp; The problem</div>
-        <h3>Your phone<br/>is a casino.</h3>
+        <h3>Your phone<br/>is not a casino.</h3>
         <p>It lights up at midnight. It shows you other people winning. It turns your 5-minute commute into seven parlays you don't remember placing. It calls this "engagement." You call it a month of rent.</p>
       </div>
       <ul>
